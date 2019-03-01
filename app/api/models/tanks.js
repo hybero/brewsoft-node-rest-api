@@ -16,4 +16,4 @@ const TankSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Tank', MovieSchema)
+module.exports = mongoose.model('Tank', TankSchema)
