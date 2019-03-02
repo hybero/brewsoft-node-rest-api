@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function(req, res){
-    res.json({"tutorial" : "Brewsoft REST API with node.js TEST GET request."});
+    res.json({"message" : "Brewsoft REST API with node.js"});
 });
 
 // public route
