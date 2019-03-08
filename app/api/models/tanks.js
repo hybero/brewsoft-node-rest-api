@@ -4,16 +4,31 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const TankSchema = new Schema({
+    user_id: {
+        type: Number,
+        trim: true,
+        required: true,
+    },
     name: {
         type: String,
         trim: true,
         required: true,
     },
-    released_on: {
-        type: Date,
+    type: {
+        type: String,
         trim: true,
-        required: true
-    }
+        required: true,
+    },
+    capacity: {
+        type: Number,
+        trim: true,
+        required: true,
+    },
+    status: {
+        type: Number,
+        trim: true,
+        required: true,
+    },
 });
 
 module.exports = mongoose.model('Tank', TankSchema)
